@@ -2,7 +2,9 @@ extern crate wiringpi;
 
 use wiringpi::pin::Value::{High, Low};
 use std::{thread, time};
+
 fn main() {
+    
     println!("process has started");
     let interval = time::Duration::from_millis(1000);
     let wiringpi = wiringpi::setup();
